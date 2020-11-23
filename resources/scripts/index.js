@@ -1,5 +1,6 @@
 function getBooks(){
-    const allBooksApiUrl = "https://localhost:5001/api/books";
+    //const allBooksApiUrl = "https://localhost:5001/api/books";
+    const allBooksApiUrl = "https://videoexample321api.herokuapp.com/api/books"
 
     fetch(allBooksApiUrl).then(function(response){
         console.log(response);
