@@ -29,7 +29,9 @@ window.onclick = function(event) {
 }
 
 function putBook(id){
-    const putBookApiUrl = "https://localhost:5001/api/books/"+id;
+    //const putBookApiUrl = "https://localhost:5001/api/books/"+id;
+    const putBookApiUrl = "https://videoexample321api.herokuapp.com/api/books/"+id;
+    
     const bookTitle = document.getElementById("updateTitle").value;
     const bookAuthor = document.getElementById("updateAuthor").value;
 

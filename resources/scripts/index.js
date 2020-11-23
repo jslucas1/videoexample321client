@@ -24,7 +24,8 @@ function getBooks(){
 }
 
 function postBook(){
-    const postBookApiUrl = "https://localhost:5001/api/books";
+    //const postBookApiUrl = "https://localhost:5001/api/books";
+    const postBookApiUrl = "https://videoexample321api.herokuapp.com/api/books"
     const bookTitle = document.getElementById("title").value;
     const bookAuthor = document.getElementById("author").value;
 
@@ -47,7 +48,9 @@ function postBook(){
 }
 
 function removeBook(id){
-    const deleteBookApiUrl = "https://localhost:5001/api/books/"+id;
+    //const deleteBookApiUrl = "https://localhost:5001/api/books/"+id;
+    const deleteBookApiUrl = "https://videoexample321api.herokuapp.com/api/books/"+id;
+    
 
     fetch(deleteBookApiUrl, {
         method: "DELETE",
